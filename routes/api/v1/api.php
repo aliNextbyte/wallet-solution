@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::group(['namespace' => 'Api\V1'], function () {
-
+ 
     Route::group(['middleware' => ['deviceVerify']], function () {
         Route::group(['middleware' => ['inactiveAuthCheck', 'trackLastActiveAt', 'auth:api']], function () {
             Route::post('check-customer', [GeneralController::class, 'checkCustomer']);

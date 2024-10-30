@@ -16,7 +16,7 @@
         <div class="card card-body mb-4">
             <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2 pb-1">
                 <h5 class="card-title d-flex align-items-center gap-2">
-                    <img src="{{asset('public/assets/admin/img/media/business-analytics.png')}}" alt="{{ translate('business_analytics') }}">
+                    <img src="{{asset('assets/admin/img/media/business-analytics.png')}}" alt="{{ translate('business_analytics') }}">
                     {{translate('E-Money Statistics')}}
                 </h5>
             </div>
@@ -32,7 +32,7 @@
                     <div class="card-body">
                         <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
                             <h5 class="card-title d-flex align-items-center gap-2">
-                                <img src="{{asset('public/assets/admin/img/media/business-analytics.png')}}" class="card-icon" alt="">
+                                <img src="{{asset('assets/admin/img/media/business-analytics.png')}}" class="card-icon" alt="">
                                 {{translate('Transaction statistics for business analytics')}}
                             </h5>
                             <div class="mb-2">
@@ -77,9 +77,9 @@
         @endsection
 
         @push('script')
-            <script src="{{asset('public/assets/admin/vendor/chart.js/dist/Chart.min.js')}}"></script>
-            <script src="{{asset('public/assets/admin/vendor/chart.js.extensions/chartjs-extensions.js')}}"></script>
-            <script src="{{asset('public/assets/admin/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js')}}"></script>
+            <script src="{{asset('assets/admin/vendor/chart.js/dist/Chart.min.js')}}"></script>
+            <script src="{{asset('assets/admin/vendor/chart.js.extensions/chartjs-extensions.js')}}"></script>
+            <script src="{{asset('assets/admin/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js')}}"></script>
         @endpush
 
 

@@ -49,7 +49,7 @@ class AgentAuthController extends Controller
 
         if (isset($agent) && $agent->type != 1 ){
             return response()->json([
-                'message' => 'This phone is already register as customer',
+                'message' => 'This phone is already registered as a customer',
                 'user_type' => 'customer',
             ], 403);
         }

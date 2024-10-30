@@ -1793,4 +1793,12 @@
   'Mughal is a secured and user-friendly digital wallet' => 'Mughal is a secured and user-friendly digital wallet',
   'Welcome to Zamapay' => 'Welcome to Zamapay',
   'Zamapay is a secured and user-friendly digital wallet' => 'Zamapay is a secured and user-friendly digital wallet',
+  'nav_menu' => 'Nav menu',
+  'Basic information' => 'Basic information',
+  'Full name' => 'Full name',
+  'Change your password' => 'Change your password',
+  'Save Changes' => 'Save Changes',
+  'Want to update the admin information ?' => 'Want to update the admin information  ',
+  'Want to update the password ?' => 'Want to update the password  ',
+  'trade_license' => 'Trade license',
 );

@@ -5,9 +5,9 @@
         <div class="navbar-vertical-container">
             <div class="navbar-brand-wrapper justify-content-between">
                 @php($restaurantLogo=\App\CentralLogics\helpers::get_business_settings('logo'))
-                <a class="navbar-brand" href="{{route('admin.dashboard')}}" aria-label="Front">
+                <a class="navbar-brand mt-2" href="{{route('admin.dashboard')}}" aria-label="Front">
                     <img class="w-100 side-logo"
-                         src="{{Helpers::onErrorImage($restaurantLogo, asset('storage/app/public/business') . '/' . $restaurantLogo, asset('public/assets/admin/img/1920x400/img2.jpg'), 'business/')}}"
+                         src="{{Helpers::onErrorImage($restaurantLogo, storage_path('storage/app/public/business') . '/' . $restaurantLogo, asset('assets/admin/img/1920x400/logo.png'), 'business/')}}"
                          alt="{{ translate('Logo') }}">
                 </a>
                 <div class="navbar-nav-wrap-content-left">
@@ -19,14 +19,14 @@
             </div>
 
             <div class="navbar-vertical-content">
-                <form class="sidebar--search-form">
+                {{-- <form class="sidebar--search-form">
                     <div class="search--form-group">
                         <button type="button" class="btn"><i class="tio-search"></i></button>
                         <input type="text" class="form-control form--control" placeholder="Search Menu..." id="search-sidebar-menu">
                     </div>
-                </form>
+                </form> --}}
 
-                <ul class="navbar-nav navbar-nav-lg nav-tabs">
+                <ul class="navbar-nav navbar-nav-lg nav-tabs mt-3">
                     <li class="navbar-vertical-aside-has-menu {{Request::is('admin')?'active':''}}">
                         <a class="js-navbar-vertical-aside-menu-link nav-link"
                            href="{{route('admin.dashboard')}}" title="{{translate('dashboard')}}">

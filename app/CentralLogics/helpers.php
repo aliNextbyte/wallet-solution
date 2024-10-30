@@ -174,14 +174,14 @@ class helpers
         return $data['message'];
     }
 
-    public static function upload(string $dir, string $format, $image = null)
+    public static function upload(string $dir, string $storageType, string $format, $image = null)
     {
         if ($image != null) {
             $imageName = \Carbon\Carbon::now()->toDateString() . "-" . uniqid() . "." . $format;
-            if (!Storage::disk('public')->exists($dir)) {
-                Storage::disk('public')->makeDirectory($dir);
+            if (!Storage::disk($storageType)->exists($dir)) {
+                Storage::disk($storageType)->makeDirectory($dir);
             }
-            Storage::disk('public')->put($dir . $imageName, file_get_contents($image));
+            Storage::disk($storageType)->put($dir . $imageName, file_get_contents($image));
         } else {
             $imageName = 'def.png';
         }

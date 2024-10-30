@@ -49,7 +49,7 @@ class User extends Authenticatable
     {
         $image = $this->image ?? null;
 
-        $path = asset('public/assets/admin/img/160x160/img1.jpg');
+        $path = asset('assets/admin/img/160x160/img1.jpg');
 
         $folderNames = [0 => 'admin', 1 => 'agent', 2 => 'customer'];
         $folder = $folderNames[$this->type] ?? 'merchant';
@@ -70,7 +70,7 @@ class User extends Authenticatable
                 if (Storage::disk('public')->exists('user/identity/' . $item)) {
                     $imageUrlArray[$key] = asset('storage/app/public/user/identity/'. $item) ;
                 } else {
-                    $imageUrlArray[$key] = asset('public/assets/admin/img/900x400/img1.jpg');
+                    $imageUrlArray[$key] = asset('assets/admin/img/900x400/img1.jpg');
                 }
             }
         }
@@ -86,7 +86,7 @@ class User extends Authenticatable
                 if (Storage::disk('public')->exists('merchant/' . $item)) {
                     $imageUrlArray[$key] = asset('storage/app/public/merchant/'. $item) ;
                 } else {
-                    $imageUrlArray[$key] = asset('public/assets/admin/img/160x160/img1.jpg');
+                    $imageUrlArray[$key] = asset('assets/admin/img/160x160/img1.jpg');
                 }
             }
         }

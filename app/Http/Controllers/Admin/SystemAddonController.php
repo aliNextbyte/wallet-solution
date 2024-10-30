@@ -29,7 +29,7 @@ class SystemAddonController extends Controller
      */
     public function index(): View|Factory|Application
     {
-        $dir = 'Modules';
+        $dir = base_path('Modules');
         $directories = self::getDirectories($dir);
 
         $addons = [];

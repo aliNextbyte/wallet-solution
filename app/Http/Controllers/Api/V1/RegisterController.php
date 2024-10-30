@@ -30,7 +30,7 @@ class RegisterController extends Controller
         $validator = Validator::make($request->all(), [
             'f_name' => 'required',
             'l_name' => 'required',
-            'image' => 'mimes:jpeg,jpg,png,gif',
+            'image' => 'image|mimes:jpeg,jpg,png,gif',
             'gender' => 'required',
             'occupation' => '',
             'dial_country_code' => 'required',
@@ -43,7 +43,9 @@ class RegisterController extends Controller
                 'max:20',
             ],
             'email' => '',
-            'password' => 'required|min:4|max:4'
+            'password' => 'required|min:4|max:4',
+            // 'id_card_image_front' => 'image|required|mimes:jpeg,jpg,png,gif',
+            // 'id_card_image_back' => 'image|required|mimes:jpeg,jpg,png,gif',
         ]);
 
         if ($validator->fails()) {
@@ -64,7 +66,7 @@ class RegisterController extends Controller
                 $verify = $this->phoneVerification->where(['phone' => $phone, 'otp' => $request['otp']])->first();
                 if (!isset($verify)) {
                     return response()->json(['errors' => [
-                        ['code' => 'otp', 'message' => 'OTP is not found!']
+                        ['code' => 'otp', 'message' => 'Invalid OTP!']
                     ]], 404);
 
                 }
@@ -81,7 +83,7 @@ class RegisterController extends Controller
             $user = $this->user;
             $user->f_name = $request->f_name;
             $user->l_name = $request->l_name;
-            $user->image = $request->has('image') ? Helpers::upload('customer/', 'png', $request->file('image')) : null;
+            $user->image = $request->has('image') ? Helpers::upload('customer/', 'public', $request->file('image')->getClientOriginalExtension(), $request->file('image')) : null;
             $user->gender = $request->gender;
             $user->occupation = $request->occupation;
             $user->dial_country_code = $request->dial_country_code;
@@ -91,6 +93,8 @@ class RegisterController extends Controller
             $user->password = bcrypt($request->password);
             $user->type = CUSTOMER_TYPE;
             $user->referral_id = $request->referral_id ?? null;
+            // $user->id_card_image_front = Helpers::upload('customer/', 'private', $request->file('id_card_image_front')->getClientOriginalExtension(), $request->file('id_card_image_front'));
+            // $user->id_card_image_back = Helpers::upload('customer/', 'private', $request->file('id_card_image_back')->getClientOriginalExtension(), $request->file('id_card_image_back'));
             $user->save();
 
             $user->find($user->id);

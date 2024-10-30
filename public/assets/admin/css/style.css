@@ -1,5 +1,5 @@
 :root {
-  --primary: #014f5b;
+  --primary: #7C5946;
   --primary-rgb: 1, 79, 91;
   --tc: #1e2022;
 }
@@ -12,6 +12,7 @@ html {
   padding-left: 1rem;
   padding-right: 1rem;
   overflow: hidden;
+  background: #7C5946;
 }
 
 .side-logo {
@@ -61,14 +62,14 @@ html {
 }
 
 .navbar .nav-link:hover {
-  color: #c6ffc1;
+  color: #ffd7c1;
 }
 
 .navbar .active > .nav-link,
 .navbar .nav-link.active,
 .navbar .nav-link.show,
 .navbar .show > .nav-link {
-  color: #c6ffc1;
+  color: white;
 }
 
 .navbar-vertical .active .nav-indicator-icon,
@@ -108,7 +109,7 @@ html {
 }
 
 .navbar-vertical-content {
-  background: #014f5b;
+  background: #7C5946;
 }
 
 .form--control {

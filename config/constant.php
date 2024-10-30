@@ -361,6 +361,7 @@ const PHONE_CODE = [
     ['code' => '+670', 'name' => 'Northern Marianas (+670)'],
     ['code' => '+47', 'name' => 'Norway (+47)'],
     ['code' => '+968', 'name' => 'Oman (+968)'],
+    ['code' => '+92', 'name' => 'Pakistan (+92)'],
     ['code' => '+680', 'name' => 'Palau (+680)'],
     ['code' => '+507', 'name' => 'Panama (+507)'],
     ['code' => '+675', 'name' => 'Papua New Guinea (+675)'],

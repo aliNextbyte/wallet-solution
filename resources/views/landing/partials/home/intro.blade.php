@@ -23,8 +23,9 @@
                     <div class="bg-white p-3 rounded pe-xl-5 star-opacity">
                         <div class="media gap-2 align-items-center">
                             <img width="40"
-                                 src="{{asset('storage/app/public/landing-page/intro-section/'.$data['intro_section']['rating_and_user_data']['review_user_icon'])}}"
-                                 class="border border-2 rounded-circle" alt="{{translate('image')}}">
+                                src="{{ asset('storage/landing-page/intro-section/'.$data['intro_section']['rating_and_user_data']['review_user_icon']) }}"
+                                class="border border-2 rounded-circle" alt="{{ translate('image') }}">
+
                             <div class="media-body">
                                 <div
                                         class="text-white">{{$data['intro_section']['rating_and_user_data']['reviewer_name']}}</div>

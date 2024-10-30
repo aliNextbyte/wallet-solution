@@ -70,7 +70,7 @@ class OTPController extends Controller
         }
 
         return response()->json(['errors' => [
-            ['code' => 'otp', 'message' => 'OTP is not found!']
+            ['code' => 'otp', 'message' => 'Invalid OTP!']
         ]], 404);
     }
 }

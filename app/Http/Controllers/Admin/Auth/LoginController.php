@@ -99,7 +99,6 @@ class LoginController extends Controller
             return redirect()->route('admin.dashboard');
         }
 
-
         return redirect()->back()->withInput($request->only('email', 'remember'))
             ->withErrors(['Credentials does not match.']);
     }

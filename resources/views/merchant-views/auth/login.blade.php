@@ -8,21 +8,21 @@
     <link rel="shortcut icon"
           href="{{asset('storage/app/public/favicon')}}/{{Helpers::get_business_settings('favicon') ?? null}}"/>
 
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/fonts/google/google.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/css/fonts/google/google.css')}}">
 
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/vendor.min.css')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/vendor/icon-set/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/css/vendor.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/vendor/icon-set/style.css')}}">
 
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/theme.minc619.css?v=1.0')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/custom.css')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/toastr.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/css/theme.minc619.css?v=1.0')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/css/toastr.css')}}">
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <style>
         .merchant-login-bg {
-            background-image: url({{asset('public/assets/admin')}}/svg/components/login_background.svg);
+            background-image: url({{asset('assets/admin')}}/svg/components/login_background.svg);
             opacity: 0.5
         }
     </style>
@@ -145,9 +145,9 @@
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="{{asset('public/assets/admin/js/vendor.min.js')}}"></script>
-<script src="{{asset('public/assets/admin/js/theme.min.js')}}"></script>
-<script src="{{asset('public/assets/admin/js/toastr.js')}}"></script>
+<script src="{{asset('assets/admin/js/vendor.min.js')}}"></script>
+<script src="{{asset('assets/admin/js/theme.min.js')}}"></script>
+<script src="{{asset('assets/admin/js/toastr.js')}}"></script>
 {!! Toastr::message() !!}
 
 @if ($errors->any())
@@ -261,7 +261,7 @@
 @endif
 
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('public//assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
 </script>
 </body>
 </html>

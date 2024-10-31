@@ -29,7 +29,7 @@
                                         @foreach($lang as $data)
                                             @if($data['code']==$local)
                                                 <img
-                                                    src="{{asset('public/assets/admin/img/media/google_translate_logo1.png')}}"
+                                                    src="{{asset('assets/admin/img/media/google_translate_logo1.png')}}"
                                                     alt="{{translate('image')}}">
                                                 <span>{{$data['name']}}</span>
                                             @endif

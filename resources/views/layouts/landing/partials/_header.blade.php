@@ -5,8 +5,8 @@
         >
             <div class="logo">
                 <a href="{{route('landing-page-home')}}">
-                    <img width="120"
-                         src="{{asset('storage/app/public/business') . '/' . \App\Models\BusinessSetting::where(['key' => 'landing_page_logo'])->first()->value}}"
+                    <img width="170"
+                         src="{{asset('storage/business') . '/' . \App\Models\BusinessSetting::where(['key' => 'landing_page_logo'])->first()->value}}"
                          alt="">
                 </a>
             </div>

@@ -33,7 +33,7 @@
                                    id="layoutSkinsRadio1" checked value="default">
                             <label class="custom-checkbox-card-label" for="layoutSkinsRadio1">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/layouts-sidebar-default.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/layouts-sidebar-default.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">{{translate('Default')}}</span>
@@ -48,7 +48,7 @@
                                    id="layoutSkinsRadio2" value="navbar-dark">
                             <label class="custom-checkbox-card-label" for="layoutSkinsRadio2">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/layouts-sidebar-dark.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/layouts-sidebar-dark.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">Dark</span>
@@ -63,7 +63,7 @@
                                    id="layoutSkinsRadio3" value="navbar-light">
                             <label class="custom-checkbox-card-label" for="layoutSkinsRadio3">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/layouts-sidebar-light.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/layouts-sidebar-light.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">{{translate('Light')}}</span>
@@ -83,7 +83,7 @@
                                    id="sidebarLayoutOptions1" checked value="default">
                             <label class="custom-checkbox-card-label" for="sidebarLayoutOptions1">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/sidebar-default-classic.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/sidebar-default-classic.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">{{translate('Default')}}</span>
@@ -98,7 +98,7 @@
                                    id="sidebarLayoutOptions2" value="navbar-vertical-aside-compact-mode">
                             <label class="custom-checkbox-card-label" for="sidebarLayoutOptions2">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/sidebar-compact.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/sidebar-compact.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">{{translate('Compact')}}</span>
@@ -113,7 +113,7 @@
                                    id="sidebarLayoutOptions3" value="navbar-vertical-aside-mini-mode">
                             <label class="custom-checkbox-card-label" for="sidebarLayoutOptions3">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/sidebar-mini.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/sidebar-mini.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">{{translate('Mini')}}</span>
@@ -133,7 +133,7 @@
                                    id="headerLayoutOptions1" value="single">
                             <label class="custom-checkbox-card-label" for="headerLayoutOptions1">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/header-default-fluid.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/header-default-fluid.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">{{translate('Default (Fluid)')}}</span>
@@ -148,7 +148,7 @@
                                    id="headerLayoutOptions2" value="single-container">
                             <label class="custom-checkbox-card-label" for="headerLayoutOptions2">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/header-default-container.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/header-default-container.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">{{translate('Default (Container)')}}</span>
@@ -163,7 +163,7 @@
                                    id="headerLayoutOptions3" value="double">
                             <label class="custom-checkbox-card-label" for="headerLayoutOptions3">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/header-double-line-fluid.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/header-double-line-fluid.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">{{translate('Double line (Fluid)')}}</span>
@@ -178,7 +178,7 @@
                                    id="headerLayoutOptions4" value="double-container">
                             <label class="custom-checkbox-card-label" for="headerLayoutOptions4">
                                 <img class="custom-checkbox-card-img"
-                                     src="{{asset('public/assets/admin')}}/svg/layouts/header-double-line-container.svg"
+                                     src="{{asset('assets/admin')}}/svg/layouts/header-double-line-container.svg"
                                      alt="Image Description">
                             </label>
                             <span class="custom-checkbox-card-text">{{translate('Double line (Container)')}}</span>

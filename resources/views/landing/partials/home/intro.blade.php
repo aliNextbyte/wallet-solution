@@ -1,5 +1,5 @@
 @if ($data['intro_section']['status'] == '1')
-    <div class="banner overflow-hidden" data-bg-img="{{asset('assets/landing/img/media/banner-bg.png')}}">
+    <div class="banner overflow-hidden" data-bg-img="{{asset('assets/landing/img/media/landing-intro-bg.png')}}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">

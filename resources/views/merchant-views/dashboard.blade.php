@@ -17,7 +17,7 @@
         <div class="card card-body mb-3">
             <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2 pb-1">
                 <h5 class="card-title d-flex align-items-center gap-2">
-                    <img src="{{asset('public/assets/admin/img/media/business-analytics.png')}}" alt="{{translate('emoney')}}">
+                    <img src="{{asset('assets/admin/img/media/business-analytics.png')}}" alt="{{translate('emoney')}}">
                     {{translate('E-Money Statistics')}}
                 </h5>
             </div>
@@ -117,10 +117,10 @@
 @endsection
 
 @push('script')
-    <script src="{{asset('public/assets/admin/vendor/chart.js/dist/Chart.min.js')}}"></script>
-    <script src="{{asset('public/assets/admin/vendor/chart.js.extensions/chartjs-extensions.js')}}"></script>
+    <script src="{{asset('assets/admin/vendor/chart.js/dist/Chart.min.js')}}"></script>
+    <script src="{{asset('assets/admin/vendor/chart.js.extensions/chartjs-extensions.js')}}"></script>
     <script
-        src="{{asset('public/assets/admin/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js')}}"></script>
+        src="{{asset('assets/admin/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js')}}"></script>
 @endpush
 
 @push('script_2')

@@ -5,7 +5,7 @@
 @section('content')
     <div class="content container-fluid">
         <div class="d-flex align-items-center gap-3 mb-3">
-            <img width="24" src="{{asset('public/assets/admin/img/media/store.png')}}" alt="{{ translate('merchant') }}">
+            <img width="24" src="{{asset('assets/admin/img/media/store.png')}}" alt="{{ translate('merchant') }}">
             <h2 class="page-header-title">{{translate('Add New Merchant')}}</h2>
         </div>
 
@@ -119,8 +119,13 @@
                         <div class="form-group mb-3">
                             <div class="form-group mb-0">
                                 <label class="input-label" for="exampleFormControlInput1">{{translate('Identification Image')}}
-                                    <small class="text-danger"> *( {{translate('ratio 1:1')}} )</small></label>
-
+                                <small class="text-danger"> *( {{translate('ratio 1:1')}} )</small></label>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" name="identification_image" id="customFileEg0" class="custom-file-input"
+                                        accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" required>
+                                <label class="custom-file-label"
+                                        for="customFileEg0">{{translate('choose')}} {{translate('file')}}</label>
                             </div>
                         </div>
                         <div>
@@ -144,7 +149,7 @@
 
                             <div class="text-center mt-3">
                                 <img class="border rounded-10 w-200" id="viewer"
-                                        src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt={{ translate('merchant') }}/>
+                                        src="{{asset('assets/admin/img/400x400/img2.jpg')}}" alt={{ translate('merchant') }}/>
                             </div>
                         </div>
                     </div>
@@ -163,7 +168,7 @@
 
                             <div class="text-center mt-3">
                                 <img class="border rounded-10 w-200" id="viewer_1"
-                                        src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt={{ translate('merchant') }}/>
+                                        src="{{asset('assets/admin/img/400x400/img2.jpg')}}" alt={{ translate('merchant') }}/>
                             </div>
                         </div>
                     </div>
@@ -180,7 +185,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
 
     <script>
         "use strict";
@@ -224,7 +229,7 @@
                 groupClassName: 'col-4',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('public/assets/admin/img/400x400/img2.jpg')}}',
+                    image: '{{asset('assets/admin/img/400x400/img2.jpg')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

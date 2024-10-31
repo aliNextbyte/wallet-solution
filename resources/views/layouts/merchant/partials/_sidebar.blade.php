@@ -6,7 +6,7 @@
                 @php($logo=\App\CentralLogics\helpers::get_business_settings('logo'))
                 <a class="navbar-brand" href="{{route('merchant.dashboard')}}" aria-label="Front">
                     <img class="w-100 side-logo"
-                         src="{{Helpers::onErrorImage($logo, asset('storage/app/public/business') . '/' . $logo, asset('public/assets/admin/img/1920x400/img2.jpg'), 'business/')}}"
+                         src="{{Helpers::onErrorImage($logo, asset('storage/app/public/business') . '/' . $logo, asset('assets/admin/img/1920x400/logo.png'), 'business/')}}"
                          alt="Logo">
                 </a>
 
@@ -19,13 +19,13 @@
             </div>
 
             <div class="navbar-vertical-content search-bar-merchant">
-                <form class="sidebar--search-form">
+                {{-- <form class="sidebar--search-form">
                     <div class="search--form-group">
                         <button type="button" class="btn"><i class="tio-search"></i></button>
                         <input type="text" class="form-control form--control" placeholder="Search Menu..."
                                id="search-sidebar-menu">
                     </div>
-                </form>
+                </form> --}}
 
                 <ul class="navbar-nav navbar-nav-lg nav-tabs">
                     <li class="navbar-vertical-aside-has-menu {{Request::is('merchant')?'show':''}}">

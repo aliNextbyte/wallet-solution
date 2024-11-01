@@ -73,7 +73,7 @@ class Kernel extends HttpKernel
         'trackLastActiveAt' => \App\Http\Middleware\TrackLastActiveAt::class,
         'inactiveAuthCheck' => \App\Http\Middleware\InactiveAuthCheck::class,
         'installation-check' => InstallationMiddleware::class,
-        'actch' => ActivationCheckMiddleware::class,
+        // 'actch' => ActivationCheckMiddleware::class,
         'deviceVerify' => DeviceVerifyMiddleware::class,
         'checkDeviceId' => CheckDeviceId::class,
         'merchant' => \App\Http\Middleware\MerchantMiddleware::class,

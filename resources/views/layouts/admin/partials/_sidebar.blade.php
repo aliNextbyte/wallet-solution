@@ -7,7 +7,7 @@
                 @php($restaurantLogo=\App\CentralLogics\helpers::get_business_settings('logo'))
                 <a class="navbar-brand mt-2" href="{{route('admin.dashboard')}}" aria-label="Front">
                     <img class="w-100 side-logo"
-                         src="{{Helpers::onErrorImage($restaurantLogo, storage_path('storage/app/public/business') . '/' . $restaurantLogo, asset('assets/admin/img/1920x400/logo.png'), 'business/')}}"
+                         src="{{Helpers::onErrorImage($restaurantLogo, storage_path('storage/app/public/business') . '/' . $restaurantLogo, asset('public/assets/admin/img/1920x400/logo.png'), 'business/')}}"
                          alt="{{ translate('Logo') }}">
                 </a>
                 <div class="navbar-nav-wrap-content-left">

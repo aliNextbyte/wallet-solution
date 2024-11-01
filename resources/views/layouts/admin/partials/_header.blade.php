@@ -27,7 +27,7 @@
                                     <a class="topbar-link dropdown-toggle d-flex align-items-center lang-country-flag text-dark" href="#" data-toggle="dropdown">
                                         @foreach($lang as $data)
                                             @if($data['code']==$local)
-                                                <img src="{{asset('assets/admin/img/media/google_translate_logo1.png')}}" alt="{{ translate('image') }}">
+                                                <img src="{{asset('public/assets/admin/img/media/google_translate_logo1.png')}}" alt="{{ translate('image') }}">
                                                 <span>{{$data['name']}}</span>
                                             @endif
                                         @endforeach

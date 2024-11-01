@@ -8,11 +8,11 @@
     <link rel="shortcut icon" href="{{storage_path('app/public/favicon')}}/{{Helpers::get_business_settings('favicon') ?? null}}"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('assets/admin/css/vendor.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/vendor/icon-set/style.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/css/custom.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/css/theme.minc619.css?v=1.0')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/vendor.min.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/vendor/icon-set/style.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/theme.minc619.css?v=1.0')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/style.css')}}">
 
     <link rel="stylesheet" href="{{asset('assets/admin/css/custom-helper.css')}}">
     <script src="{{asset('assets/admin/js/fontawesome.js')}}"></script>
@@ -20,8 +20,8 @@
 
     @stack('css_or_js')
 
-    <script src="{{asset('assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
-    <link rel="stylesheet" href="{{asset('assets/admin/css/toastr.css')}}">
+    <script src="{{asset('public/assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/toastr.css')}}">
 </head>
 
 <body class="footer-offset">
@@ -31,7 +31,7 @@
         <div class="col-md-12">
             <div id="loading" class="d-none">
                 <div class="loader-css">
-                    <img width="200" src="{{asset('assets/admin/img/loader.gif')}}" alt="{{ translate('loader') }}">
+                    <img width="200" src="{{asset('public/assets/admin/img/loader.gif')}}" alt="{{ translate('loader') }}">
                 </div>
             </div>
         </div>
@@ -50,13 +50,13 @@
 
 </main>
 
-<script src="{{asset('assets/admin/js/custom.js')}}"></script>
+<script src="{{asset('public/assets/admin/js/custom.js')}}"></script>
 
 @stack('script')
-<script src="{{asset('assets/admin/js/vendor.min.js')}}"></script>
-<script src="{{asset('assets/admin/js/theme.min.js')}}"></script>
-<script src="{{asset('assets/admin/js/sweet_alert.js')}}"></script>
-<script src="{{asset('assets/admin/js/toastr.js')}}"></script>
+<script src="{{asset('public/assets/admin/js/vendor.min.js')}}"></script>
+<script src="{{asset('public/assets/admin/js/theme.min.js')}}"></script>
+<script src="{{asset('public/assets/admin/js/sweet_alert.js')}}"></script>
+<script src="{{asset('public/assets/admin/js/toastr.js')}}"></script>
 {!! Toastr::message() !!}
 
 @if ($errors->any())
@@ -225,7 +225,7 @@
 
 @stack('script_2')
 <audio id="myAudio">
-    <source src="{{asset('assets/admin/sound/notification.mp3')}}" type="audio/mpeg">
+    <source src="{{asset('public/assets/admin/sound/notification.mp3')}}" type="audio/mpeg">
 </audio>
 
 <script>
@@ -253,7 +253,7 @@
 </script>
 
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('public/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
 </script>
 
 <script>

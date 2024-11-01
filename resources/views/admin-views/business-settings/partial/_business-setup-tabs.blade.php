@@ -13,9 +13,9 @@
 
     <li class="{{Request::is('admin/business-settings/fcm-index')?'active':''}}"><a href="{{route('admin.business-settings.fcm-index')}}">{{translate('Notification Settings')}}</a></li>
 
-    <li class="{{Request::is('admin/business-settings/app-settings')?'active':''}}"><a href="{{route('admin.business-settings.app_settings')}}">{{translate('App Settings')}}</a></li>
+    {{-- <li class="{{Request::is('admin/business-settings/app-settings')?'active':''}}"><a href="{{route('admin.business-settings.app_settings')}}">{{translate('App Settings')}}</a></li> --}}
 
-    <li class="{{Request::is('admin/business-settings/recaptcha')?'active':''}}"><a href="{{route('admin.business-settings.recaptcha_index')}}">{{translate('Recaptcha')}}</a></li>
+    {{-- <li class="{{Request::is('admin/business-settings/recaptcha')?'active':''}}"><a href="{{route('admin.business-settings.recaptcha_index')}}">{{translate('Recaptcha')}}</a></li> --}}
 
     <li class="{{Request::is('admin/business-settings/language*')?'active':''}}"><a href="{{route('admin.business-settings.language.index')}}">{{translate('Languages')}}</a></li>
 

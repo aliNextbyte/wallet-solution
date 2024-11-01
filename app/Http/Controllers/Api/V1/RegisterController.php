@@ -10,6 +10,7 @@ use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 
@@ -142,9 +143,11 @@ class RegisterController extends Controller
             'location' => 'sometimes',
         ]);
 
+
         if ($validator->fails()) {
             return response()->json(['errors' => Helpers::error_processor($validator)], 403);
         }
+    Log::info($request);
 
         $phone = $request->dial_country_code . $request->phone;
         $agentPhone = $this->user->where(['phone' => $phone])->first();
@@ -157,7 +160,8 @@ class RegisterController extends Controller
         $verify = null;
         if(Helpers::get_business_settings('phone_verification') == 1) {
             if($request->has('otp')) {
-                $verify = $this->phoneVerification->where(['phone' => $phone, 'otp' => $request['otp']])->first();
+                $verify = $this->phoneVerification->where('phone', $phone)->where('otp', $request->otp)->first();
+                Log::info('query: ' . $verify);
                 if (!isset($verify)) {
                     return response()->json(['errors' => [
                         ['code' => 'otp', 'message' => 'OTP is not found!']

@@ -114,7 +114,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-xl-4">
+                            {{-- <div class="col-sm-6 col-xl-4">
                                 @php($bannerStatus=\App\CentralLogics\Helpers::get_business_settings('banner_status'))
                                 <div class="d-flex flex-wrap flex-grow-1 justify-content-between mb-4 border rounded p-2">
                                     <span class="text-dark">
@@ -129,7 +129,7 @@
                                         </span>
                                     </label>
                                 </div>
-                            </div>
+                            </div> --}}
 
                         </div>
 

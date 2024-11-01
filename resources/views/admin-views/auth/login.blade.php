@@ -7,12 +7,12 @@
 
     <link rel="shortcut icon" href="{{asset('storage/app/public/favicon')}}/{{Helpers::get_business_settings('favicon') ?? null}}"/>
 
-    <link rel="stylesheet" href="{{asset('assets/admin/css/fonts/google/google.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/css/vendor.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/vendor/icon-set/style.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/css/theme.minc619.css?v=1.0')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/css/toastr.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/fonts/google/google.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/vendor.min.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/vendor/icon-set/style.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/theme.minc619.css?v=1.0')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/css/toastr.css')}}">
     <link rel="stylesheet" href="{{ asset('') }}">
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -21,7 +21,7 @@
 <body>
 <main id="content" role="main" class="main h-100vh d-flex flex-column justify-content-center">
     <div class="position-fixed top-0 right-0 left-0 bottom-0 bg-img-hero h-100"
-         style="background-image: url({{asset('assets/admin')}}/svg/components/login_background.svg);opacity: 0.5">
+         style="background-image: url({{asset('public/assets/admin')}}/svg/components/login_background.svg);opacity: 0.5">
     </div>
     <div class="container d-flex justify-content-center py-5">
         <div class="login-card d-inline-block">
@@ -138,9 +138,9 @@
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="{{asset('assets/admin/js/vendor.min.js')}}"></script>
-<script src="{{asset('assets/admin/js/theme.min.js')}}"></script>
-<script src="{{asset('assets/admin/js/toastr.js')}}"></script>
+<script src="{{asset('public/assets/admin/js/vendor.min.js')}}"></script>
+<script src="{{asset('public/assets/admin/js/theme.min.js')}}"></script>
+<script src="{{asset('public/assets/admin/js/toastr.js')}}"></script>
 {!! Toastr::message() !!}
 
 @if ($errors->any())

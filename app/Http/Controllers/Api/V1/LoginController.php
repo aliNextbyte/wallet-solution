@@ -128,6 +128,8 @@ class LoginController extends Controller
         $phone = $request->dial_country_code . $request->phone;
         $user = $this->user->agent()->where('phone', $phone)->first();
 
+      
+
         if (!isset($user)) {
             return response()->json(response_formatter(AUTH_LOGIN_404, null, Helpers::error_processor($validator)), 404);
         }
@@ -135,8 +137,9 @@ class LoginController extends Controller
         if (isset($user->is_active) && $user->is_active == false) {
             return response()->json(response_formatter(AUTH_BLOCK_LOGIN_403, null, Helpers::error_processor($validator)), 403);
         }
+ 
         $tempBlockTime = Helpers::get_business_settings('temporary_login_block_time') ?? 600; // seconds
-
+   
         if ($user->is_temp_blocked) {
             if(isset($user->temp_block_time) && Carbon::parse($user->temp_block_time)->DiffInSeconds() <= $tempBlockTime){
                 $time = $tempBlockTime - Carbon::parse($user->temp_block_time)->DiffInSeconds();
@@ -157,6 +160,7 @@ class LoginController extends Controller
             self::updateUserHitCount($user);
             return response()->json(response_formatter(AUTH_LOGIN_401, null, Helpers::error_processor($validator)), 401);
         }
+  
 
         if(isset($user->temp_block_time) && Carbon::parse($user->temp_block_time)->DiffInSeconds() <= $tempBlockTime){
             $time = $tempBlockTime - Carbon::parse($user->temp_block_time)->DiffInSeconds();
@@ -167,15 +171,21 @@ class LoginController extends Controller
             ];
             return response()->json(response_formatter($response, null, null), 403);
         }
+     
 
         $logStatus = self::logUserHistory($request, $user->id);
+      
         if(!$logStatus) {
             return response()->json(response_formatter(AUTH_LOGIN_400, null, Helpers::error_processor($validator)), 400);
         }
+       
 
         $user->update(['last_active_at' => now()]);
+
         $user->AauthAcessToken()->delete();
+     
         $token = $user->createToken('AgentAuthToken')->accessToken;
+        
         return response()->json(response_formatter(AUTH_LOGIN_200, $token, null), 200);
     }
 

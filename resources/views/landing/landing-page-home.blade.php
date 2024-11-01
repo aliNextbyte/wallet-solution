@@ -28,16 +28,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('assets/landing/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/landing/css/bootstrap-icons.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/vendor/icon-set/style.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/landing/plugins/swiper/swiper-bundle.min.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/landing/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/landing/css/bootstrap-icons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/admin/vendor/icon-set/style.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/landing/plugins/swiper/swiper-bundle.min.css')}}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('assets/landing/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/landing/css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/landing/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('public/assets/landing/css/custom.css')}}">
 
-    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/toastr.css">
+    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/toastr.css">
     <title>Zamapay Home</title>
 </head>
 <body>
@@ -46,7 +46,7 @@
             <img
                 alt="Zamapay logo"
                 width="170"
-                src="{{ asset('assets/landing/img/brown-logo.png') }}"
+                src="{{ asset('public/assets/landing/img/brown-logo.png') }}"
                 class="logo ps-4"
             />
         </a>
@@ -142,7 +142,7 @@
                 <img
                   alt="Dashboard overview with charts and graphs"
                   class="img-fluid"
-                  src="{{ asset('assets/landing/img/media/hrrd-hero-img 1.png') }}"
+                  src="{{ asset('public/assets/landing/img/media/hrrd-hero-img 1.png') }}"
                 />
               </div>
             </div>
@@ -233,7 +233,7 @@
             <img
               alt="Dashboard overview with charts and graphs"
               class="mt-5"
-              src="{{ asset('assets/landing/img/media/super-admin-ss.png') }}"
+              src="{{ asset('public/assets/landing/img/media/super-admin-ss.png') }}"
             />
           </div>
           <div class="col-md-6 mt-5">
@@ -288,7 +288,7 @@
             <img
               alt="Dashboard overview with charts and graphs"
               class="feature-customer-img"
-              src="{{ asset('assets/landing/img/media/agent-ss.png') }}"
+              src="{{ asset('public/assets/landing/img/media/agent-ss.png') }}"
             />
           </div>
           <div class="col-md-6 mt-5">
@@ -316,7 +316,7 @@
             <img
               alt="Dashboard overview with charts and graphs"
               class="feature-customer-img"
-              src="{{ asset('assets/landing/img/media/customer-ss.png') }}"
+              src="{{ asset('public/assets/landing/img/media/customer-ss.png') }}"
             />
           </div>
           <div class="col-md-6 mt-5">

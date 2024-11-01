@@ -1802,4 +1802,5 @@
   'Want to update the password ?' => 'Want to update the password  ',
   'trade_license' => 'Trade license',
   'Search by transaction id' => 'Search by transaction id',
+  'PIN is correct' => 'PIN is correct',
 );

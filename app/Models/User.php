@@ -41,6 +41,7 @@ class User extends Authenticatable
         'referral_id' => 'string',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
+        'location' => 'string',
     ];
 
     protected $appends = ['image_fullpath', 'identification_image_fullpath', 'merchant_identification_image_fullpath'];

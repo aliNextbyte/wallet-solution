@@ -138,7 +138,8 @@ class RegisterController extends Controller
                 'max:20',
             ],
             'email' => '',
-            'password' => 'required|min:4|max:4'
+            'password' => 'required|min:4|max:4',
+            'location' => 'sometimes',
         ]);
 
         if ($validator->fails()) {
@@ -184,6 +185,7 @@ class RegisterController extends Controller
             $user->phone = $phone;
             $user->email = $request->email;
             $user->password = bcrypt($request->password);
+            $user->location = $request->location;
             $user->type = AGENT_TYPE;    //['Admin'=>0, 'Agent'=>1, 'Customer'=>2]
             $user->referral_id = null;
             $user->save();

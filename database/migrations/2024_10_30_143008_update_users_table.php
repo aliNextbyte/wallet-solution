@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('id_card_image_front');
-            $table->string('id_card_image_back');
+            $table->string('location')->nullable();
         });
     }
 
@@ -27,8 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('id_card_image_front');
-            $table->dropColumn('id_card_image_back');
+            $table->dropColumn('location');
         });
     }
 };

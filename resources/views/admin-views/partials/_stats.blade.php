@@ -4,7 +4,7 @@
         <h2 class="title">
             {{ Helpers::set_symbol($data['total_balance']??0) }}
         </h2>
-        <img src="{{asset('assets/admin/img/media/dollar-1.png')}}" class="dashboard-icon" alt="{{ translate('generated_money') }}">
+        <img src="{{asset('public/assets/admin/img/media/dollar-1.png')}}" class="dashboard-icon" alt="{{ translate('generated_money') }}">
     </div>
 </div>
 
@@ -14,7 +14,7 @@
         <h2 class="title">
             {{ Helpers::set_symbol($data['used_balance']??0) }}
         </h2>
-        <img src="{{asset('assets/admin/img/media/dollar-2.png')}}" class="dashboard-icon" alt="{{ translate('used_balance') }}">
+        <img src="{{asset('public/assets/admin/img/media/dollar-2.png')}}" class="dashboard-icon" alt="{{ translate('used_balance') }}">
     </div>
 </div>
 
@@ -24,7 +24,7 @@
         <h2 class="title">
             {{ Helpers::set_symbol($data['unused_balance']??0) }}
         </h2>
-        <img src="{{asset('assets/admin/img/media/dollar-3.png')}}" class="dashboard-icon" alt="{{ translate('unused_balance') }}">
+        <img src="{{asset('public/assets/admin/img/media/dollar-3.png')}}" class="dashboard-icon" alt="{{ translate('unused_balance') }}">
     </div>
 </div>
 
@@ -34,7 +34,7 @@
         <h2 class="title">
             {{ Helpers::set_symbol($data['total_earned']??0) }}
         </h2>
-        <img src="{{asset('assets/admin/img/media/dollar-4.png')}}" class="dashboard-icon" alt="{{ translate('earned_money') }}">
+        <img src="{{asset('public/assets/admin/img/media/dollar-4.png')}}" class="dashboard-icon" alt="{{ translate('earned_money') }}">
     </div>
 </div>
 
